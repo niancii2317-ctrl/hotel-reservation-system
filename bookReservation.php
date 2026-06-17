@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bookButton'])) {
         } else {
             $ReservationDate = date('Y-m-d');
             $sql_book = "INSERT INTO reservation (GuestID, StaffID, RoomNo, CheckInDate, CheckOutDate, ReservationDate, ReservationStatus) 
-                         VALUES ('$GuestID', 9001, '$RoomNo', '$CheckInDate', '$CheckOutDate', '$ReservationDate', 'confirmed')";
+                         VALUES ('$GuestID', 9001, '$RoomNo', '$CheckInDate', '$CheckOutDate', '$ReservationDate', 'Confirmed')";
             
             if (mysqli_query($conn, $sql_book)) {
                 $success = "booking success";

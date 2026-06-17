@@ -59,6 +59,7 @@ include "checklogin.php";
         <h2 class="title">HOTEL RESERVATION</h2>
         <?php
         if($_SESSION['role']=="staff"){
+        echo '<a href="Reservation.php" class="w3-button w3-black btn">Reservation List</a>';
         echo '<form action="staffCheck.php" method="post" >';
         echo '<button type="submit" name="StaffChecButton" class="w3-button w3-black btn">Check customer by room</button>';
         echo '</form>';
